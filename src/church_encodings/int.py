@@ -2,7 +2,7 @@ from church_encodings.bool import b_true, b_false, b_and, b_not
 from church_encodings.pair import p_pair, p_first, p_second
 
 i_zero = ...
-i_succ = lambda n: ...
+i_succ = lambda n: lambda x: f(n(f)(x))
 
 
 i_one   = i_succ(i_zero)
