@@ -35,11 +35,14 @@ def to_int(n):
 
 
 def from_list(l):
-    ...
+    ma_liste = l_nil
+    for i in l.reverse:
+        ma_liste = l_cons(i, ma_liste)
+    return ma_liste
 
 
 def to_list(l):
-    ...
+    return l(lambda y, x:[y] + x,[l])
 
 
 def from_option(o):
